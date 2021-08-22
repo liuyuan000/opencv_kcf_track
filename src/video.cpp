@@ -19,11 +19,11 @@ int main(){
     bool MULTISCALE = true;
     bool LAB = false;
 
-    VideoCapture capture("/home/liuyuan/CLionProjects/KCFcpp-master/video.mp4");
+    VideoCapture capture("../video.mp4");
     VideoWriter outputVideo;
     Size S = Size((int) capture.get(CAP_PROP_FRAME_WIDTH),    // Acquire input size
                   (int) capture.get(CAP_PROP_FRAME_HEIGHT));
-    outputVideo.open("/home/liuyuan/CLionProjects/KCFcpp/result01.mp4", VideoWriter::fourcc('M', 'J', 'P', 'G'), capture.get(CAP_PROP_FPS), S, true);
+    outputVideo.open("../result01.mp4", VideoWriter::fourcc('M', 'J', 'P', 'G'), capture.get(CAP_PROP_FPS), S, true);
 
     capture.read(frame);
     ROI = selectROI(frame);
