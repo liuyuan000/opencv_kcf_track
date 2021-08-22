@@ -19,7 +19,7 @@ int main(){
     bool MULTISCALE = true;
     bool LAB = false;
 
-    VideoCapture capture("../video.mp4");
+    VideoCapture capture("../1.mp4");
     VideoWriter outputVideo;
     Size S = Size((int) capture.get(CAP_PROP_FRAME_WIDTH),    // Acquire input size
                   (int) capture.get(CAP_PROP_FRAME_HEIGHT));
