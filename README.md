@@ -12,6 +12,8 @@ git clone https://github.com/liuyuan000/opencv_kcf_track
 
 cd opencv_kcf_track
 
+修改src/video.cpp中的视频路径
+
 
 3.
 
